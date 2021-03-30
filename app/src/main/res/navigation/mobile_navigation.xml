@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/scheduleFragment">
+
+    <fragment
+        android:id="@+id/checkInFragment"
+        android:name="com.example.finalproject.ui.CheckIn.CheckInFragment"
+        android:label="check_in_fragment"
+        tools:layout="@layout/check_in_fragment" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.finalproject.ui.Schedule.ScheduleFragment"
+        android:label="schedule_fragment"
+        tools:layout="@layout/schedule_fragment" />
+    <fragment
+        android:id="@+id/shiftFragment"
+        android:name="com.example.finalproject.ui.Shift.ShiftFragment"
+        android:label="shift_fragment"
+        tools:layout="@layout/shift_fragment" >
+        <action
+            android:id="@+id/action_shiftDetails"
+            app:destination="@id/shiftDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.example.finalproject.ui.Employee.EmployeeFragment"
+        android:label="employee_fragment"
+        tools:layout="@layout/employee_fragment" />
+    <fragment
+        android:id="@+id/addEmployeeFragment"
+        android:name="com.example.finalproject.ui.Employee.AddEmployeeFragment"
+        android:label="fragment_add_employee"
+        tools:layout="@layout/fragment_add_employee" />
+    <fragment
+        android:id="@+id/shiftDetailsFragment"
+        android:name="com.example.finalproject.ui.Shift.ShiftDetailsFragment"
+        android:label="fragment_shift_details"
+        tools:layout="@layout/fragment_shift_details" />
+</navigation>

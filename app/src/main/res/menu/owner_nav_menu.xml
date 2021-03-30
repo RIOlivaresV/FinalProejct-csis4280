@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/scheduleFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/schedule" />
+
+    <item
+        android:id="@+id/shiftFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/addShift" />
+    <item
+        android:id="@+id/employeeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/addEmployee" />
+
+</menu>
